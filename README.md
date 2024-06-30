@@ -1,7 +1,7 @@
 # EuroSat-RGB-Classifiers
 
 models:
--resnet-18
--resnet-50
--vit-base-patch16-224
--hybrid
+- resnet-18
+- resnet-50
+- vit-base-patch16-224
+- hybrid

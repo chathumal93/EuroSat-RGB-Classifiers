@@ -15,6 +15,12 @@ Splits : Train 80% Validation 10% Test 10% (original dataset's label distributio
 Link: [Eurosat-RGB Dataset](https://huggingface.co/datasets/cm93/eurosat)
 
 ## Models' Performance
+
+Links to final models:
+- [resnet18-eurosat](https://huggingface.co/cm93/resnet18-eurosat)
+- [resnet50-eurosat](https://huggingface.co/cm93/resnet50-eurosat)
+- [vit-base-patch16-224-eurosat](https://huggingface.co/cm93/vit-base-patch16-224-eurosat)
+
 #### Model's loss and accuracy in each phase:
 
 | Model                        | Phase      | Avg Loss | Accuracy  |
@@ -41,21 +47,17 @@ Link: [Eurosat-RGB Dataset](https://huggingface.co/datasets/cm93/eurosat)
 #### Confusion Matrices:
 - resnet18-eurosat
 <img src="assets/r18.png" width="500" height="400" />
+
 - resnet50-eurosat
 <img src="assets/r50.png" width="500" height="400" />
+
 - vit-base-patch16-224-eurosat
 <img src="assets/vit.png" width="500" height="400" />
 
 ## Usage
-Model training procedure and the parameters can be found in the jupyter notebooks.
-
-Links to final models:
-- [resnet18-eurosat](https://huggingface.co/cm93/resnet18-eurosat)
-- [resnet50-eurosat](https://huggingface.co/cm93/resnet50-eurosat)
-- [vit-base-patch16-224-eurosat](https://huggingface.co/cm93/vit-base-patch16-224-eurosat)
+For details on the model training procedure and its parameters, please refer to the Jupyter notebooks provided. For a list of required dependencies, refer to requirements.txt.
 
 ## Conclusion
 - ViT-base-patch16-224 appears to be the best performing model in terms of accuracy, precision, recall, and F1-score, making it a robust choice for the EuroSAT dataset.
 - ResNet50 also performs exceptionally well and could be considered if a ResNet architecture is preferred or if there are computational constraints.
 - ResNet18, while slightly behind the other two models, still offers strong performance and could be a good choice for scenarios where a smaller, less complex model is desired.
-Overall, all three models are highly capable for the EuroSAT dataset, but the ViT-base-patch16-224 stands out as the top performer.

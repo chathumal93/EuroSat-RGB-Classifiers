@@ -1,6 +1,6 @@
 # EuroSat-RGB-Classifiers
 
-This repository contains the performance comparison of three different models fine-tuned on the EuroSAT dataset
+This repository contains three different models fine-tuned on the EuroSAT dataset, along with their performance comparisons.
 
 ## Models Used
 1. **ResNet-18** (pre-trained on ImageNet 1k)
